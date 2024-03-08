@@ -1,4 +1,4 @@
-nome = "Dns"
+"""nome = "Dns"
 Idade = 27
 profiçao = "Programador"
 linguagem = "Python"
@@ -15,4 +15,18 @@ PI = 3.14159
 
 print (f"Valor de PI: {PI:.2f}")
 
-print (f"Valor de PI: {PI:10.2f}")
+print (f"Valor de PI: {PI:10.2f}")"""
+
+
+nome = "Dnsssss Dnzzzzz de Dnyyyyy"
+
+print(nome[0])
+print(nome[-1])
+print(nome[:9])
+print(nome[10:])
+print(nome[10:16])
+print(nome[10:16:2])
+print(nome[:])
+print(nome[::-1])
+
+

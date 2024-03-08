@@ -12,3 +12,10 @@ for i in range(altura):
 
 for i in range(altura_tronco):
     print('    '  + '*' * largura_tronco)
+
+
+
+carros = ["Audi", "Porshe", "Ferrari"]
+
+for indice, carros in enumerate(carros):
+    print(f"{indice}: {carros}")

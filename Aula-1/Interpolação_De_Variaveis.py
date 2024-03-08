@@ -18,6 +18,11 @@ print (f"Valor de PI: {PI:.2f}")
 print (f"Valor de PI: {PI:10.2f}")"""
 
 
+
+
+
+
+
 nome = "Dnsssss Dnzzzzz de Dnyyyyy"
 
 print(nome[0])

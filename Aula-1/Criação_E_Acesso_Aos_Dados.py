@@ -28,6 +28,17 @@ contatos = {
 }
 
 
+"""print(contatos["ade@.com"])
+print(contatos.get("ade@.com"))
+
+contatos.pop("ade@.com")
+
+print(contatos.get("ade@.com"))
+
+print(contatos.get("ade@.com", {}))"""
+
+
+
 
 print(contatos["Dns@.com"]["telefone"])
 print(contatos["rgt@.com"]["extra"]["a"])
@@ -51,3 +62,52 @@ print(pessoa)
 
 pessoa = dict()
 print(pessoa)
+
+
+
+#print(contatos.get("chave", {}))
+
+print(contatos.get("Dns@.com", {}))
+
+
+print()
+
+
+copia = contatos.copy()
+copia["ght@.com"] = {"nome": "tgf"}
+
+
+print()
+
+contatos.clear()
+print(contatos)
+
+print()
+
+
+
+contatos = dict.fromkeys(["bairo", "cidade"])
+print(contatos)
+
+contatos = dict.fromkeys(["bairo", "cidade"], "vazio")
+print(contatos)
+
+print()
+
+
+for chave, valor in contatos.items():
+    print(chave, valor)
+
+
+
+contato = {"nome": "Dns", "telefone": "3333-3333"}
+contato.setdefault("nome", "maria")
+print(contato)
+
+contato.setdefault("idade", 27)
+print(contato)
+
+
+
+
+

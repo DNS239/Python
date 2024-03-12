@@ -100,12 +100,15 @@ for chave, valor in contatos.items():
 
 
 
-contato = {"nome": "Dns", "telefone": "3333-3333"}
-contato.setdefault("nome", "maria")
+contato = {"nome": "maria", "telefone": "3333-3333"}
+contato.setdefault("nome", "Dns")
+
 print(contato)
 
 contato.setdefault("idade", 27)
+
 print(contato)
+
 
 
 

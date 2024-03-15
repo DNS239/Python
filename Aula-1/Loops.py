@@ -52,19 +52,25 @@ else:
 
 
 
-itens1 = []
-itens2 = []
-itens3 = []
+#                               Desafio 2                         #
 
-itens1.extend(["Espada", "Escudo", "Poção"])
-itens2.extend(["Gema", "Flecha", "Capa"])
-itens3.extend(["Masterball", "Potion", "Elixir"])
 
-def imprimir_itens(player, itens):
-    print(f"Lista de itens:")
+
+"""itens = []
+repeticao = 1
+
+def lista(itens):
+    print("Lista de itens:")
     for item in itens:
         print(f"- {item}")
+        
+while repeticao <= 3:
+    itens.append(input(" "))
+    repeticao += 1
 
-imprimir_itens("player1", itens1)
-imprimir_itens("player2", itens2)
-imprimir_itens("player3", itens3)
+
+lista(itens)"""
+
+
+
+

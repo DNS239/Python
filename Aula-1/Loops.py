@@ -23,9 +23,9 @@ for indice, carros in enumerate(carros):
 
 
 
+#                        Desafio  1                         #
 
-
-# Solicita a entrada do usuário
+"""# Solicita a entrada do usuário
 quantidade_passos = int(input(""))
 
 # Verifica se a quantidade de passos é positiva
@@ -37,6 +37,34 @@ else:
         if passo == 1:
             print(f"Explorador: {passo} passo")
         else:
-            print(f"Explorador: {passo} passos")
+            print(f"Explorador: {passo} passos")"""
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+itens1 = []
+itens2 = []
+itens3 = []
+
+itens1.extend(["Espada", "Escudo", "Poção"])
+itens2.extend(["Gema", "Flecha", "Capa"])
+itens3.extend(["Masterball", "Potion", "Elixir"])
+
+def imprimir_itens(player, itens):
+    print(f"Lista de itens:")
+    for item in itens:
+        print(f"- {item}")
+
+imprimir_itens("player1", itens1)
+imprimir_itens("player2", itens2)
+imprimir_itens("player3", itens3)

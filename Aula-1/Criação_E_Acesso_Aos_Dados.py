@@ -101,11 +101,11 @@ for chave, valor in contatos.items():
 
 
 contato = {"nome": "maria", "telefone": "3333-3333"}
-contato.setdefault("nome", "Dns")
 
 print(contato)
 
 contato.setdefault("idade", 27)
+contato.setdefault("nome", "Dns")
 
 print(contato)
 

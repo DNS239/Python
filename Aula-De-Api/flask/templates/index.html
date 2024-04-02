@@ -7,14 +7,16 @@
     <style>
         body {
             min-height: 100vh;
-            background-position:  center;
+            background-position: center;
             background-image: url('/static/background.jpeg');
             background-size: cover;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
+            position: relative;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
-            
             line-height: 2em;
             text-align: center;
             padding: 10px;
@@ -38,6 +40,29 @@
             background-color: rgba(12, 177, 122, 0.457);
         }
 
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0; /* Adiciona espaço interno ao rodapé */
+            font-size: 14px;
+            overflow: hidden; /* Impede que o conteúdo do rodapé ultrapasse seus limites */
+        }
+
+        .song-name {
+            display: inline-block;
+            white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+            overflow: hidden; /* Impede que o texto ultrapasse o limite da janela */
+            text-overflow: ellipsis; /* Adiciona reticências ao final do texto quando ele ultrapassa o limite */
+            animation: marquee 10s linear infinite; /* Animação para o texto deslizar */
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); } /* Inicia a animação fora da visualização */
+            100% { transform: translateX(-100%); } /* Termina a animação fora da visualização */
+        }
     </style>
 </head>
 <body>
@@ -47,5 +72,15 @@
         <h2>Testando</h2>
     </div>
 
+    <div class="radio">
+        <audio autoplay>
+            <source src="/static/ad.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <footer>
+        <span class="song-name">I Wanna Know (feat. Bea Miller) - Syn Cole Remix.</span>
+    </footer>
 </body>
 </html>
